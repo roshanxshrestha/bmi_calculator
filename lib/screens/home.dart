@@ -37,7 +37,7 @@ class _HomeScreenState extends State<HomeScreen> {
               height: 20,
             ),
             Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
                 Container(
                   width: 130,
@@ -80,7 +80,32 @@ class _HomeScreenState extends State<HomeScreen> {
                       ),
                     ),
                   ),
-                )
+                ),
+              ],
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                Container(
+                  child: Text(
+                    "metre",
+                    style: TextStyle(
+                      fontSize: 22,
+                      fontWeight: FontWeight.normal,
+                      color: accentColor,
+                    ),
+                  ),
+                ),
+                Container(
+                  child: Text(
+                    "kg",
+                    style: TextStyle(
+                      fontSize: 22,
+                      fontWeight: FontWeight.normal,
+                      color: accentColor,
+                    ),
+                  ),
+                ),
               ],
             ),
             SizedBox(
@@ -130,6 +155,15 @@ class _HomeScreenState extends State<HomeScreen> {
                 _bmiResult.toStringAsFixed(2),
                 style: TextStyle(
                   fontSize: 90,
+                  color: accentColor,
+                ),
+              ),
+            ),
+            Container(
+              child: Text(
+                "kg/m²",
+                style: TextStyle(
+                  fontSize: 22,
                   color: accentColor,
                 ),
               ),
