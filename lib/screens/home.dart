@@ -118,7 +118,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 setState(() {
                   _bmiResult = _w / (_h * _h);
                   if (_bmiResult > 25) {
-                    _textResult = "You\'re over weight!!!";
+                    _textResult = "You're over weight!!!";
                   } else if (_bmiResult >= 18.5 && _bmiResult <= 25) {
                     _textResult = "You've normal weight ;)";
                   } else {
